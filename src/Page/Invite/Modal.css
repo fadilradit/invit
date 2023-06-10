@@ -1,0 +1,269 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Here */
+
+
+.modal{
+    background-color: #4A7572;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: 1s;
+    color: whitesmoke;
+    z-index: 200;
+}
+
+#modal.hide{
+    top: -1000px;
+}
+
+.modal .modal-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.modal-title p{
+    margin-bottom: 10px;
+}
+
+.modal-title h1{
+    font-family: 'Ephesis', cursive;
+    font-size: 60px;
+    font-weight: 400;
+
+}
+
+.modal .visitor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+.visitor h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.visitor h2{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.modal .open{
+    width: 200px;
+    height: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: burlywood;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px whitesmoke;
+}
+
+.modal .open:hover{
+    cursor: pointer;
+}
+
+
+
+/* Rekening */
+
+.rek{
+    background-color: #5152528a;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    top: -1000px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: 1s;
+    color: whitesmoke;
+    z-index: 200;
+}
+
+.rek.fade-in{
+    top: 0;
+    transition: 1s;
+}
+
+.rek .list-rek{
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.list-rek .head-rek{
+    /* background-color: violet; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-around;
+    border-bottom: solid black;
+    padding-bottom: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+
+
+.head-rek h1{
+    font-size: 25px;
+    color: black;
+}
+
+.head-rek h3{
+    color: red;
+    font-size: 13px;
+}
+
+.head-rek h3:hover{
+    cursor: pointer;
+}
+
+.list-rek .bank{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid .5px black;
+}
+
+.bank .bank-logo{
+    width: 50%;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.bank-detail h1{
+    color: black;
+    font-size: 17x;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+.bank .bank-detail{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bank-detail .nomor{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.bank-detail .nomor img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nomor p{
+    color: black;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.nomor button{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.nomor button:active{
+    transform: translateY(10px);
+}
+
+.nomor button:hover{
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,35 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #4A7572;
+}
+
+.home h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home .link{
+    text-decoration: none;
+    font-size: 25px;
+    color: cornsilk;
+    border: black solid 2px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px;
+    transition: .5s;
+}
+
+.home .link:active{
+    box-shadow: 0 0 15px 7px;
+    transform: translateY(4px);
+}

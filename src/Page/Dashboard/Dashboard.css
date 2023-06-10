@@ -1,0 +1,155 @@
+.dashboard{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #4A7572;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.dashboard h1{
+    font-size: 25px;
+    margin-bottom: 50px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: rgb(250, 209, 148);
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.dashboard input{
+    margin-bottom: 20px;
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    border-radius:0 20px 0 20px;
+    transition: 1.5s;
+}
+
+.dashboard input:focus-within{
+    box-shadow: 0 0 15px 7px white;
+}
+
+.dashboard a{
+    width: 200px;
+    background-color: rgb(63, 61, 61);
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+    margin-bottom: 100px ;
+}
+
+.dashboard a:hover{
+    cursor: pointer;
+}
+
+.dashboard a:active{
+    box-shadow: 0 0 15px 7px;
+    transform: translateY(4px);
+}
+
+#pesan-dashboard{
+    width: 75%;
+    background-color: #cee4e3;
+    height: 350px;
+    border: solid black 2px ;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: blanchedalmond 0 0 8px 4px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+#pesan-dashboard .pesan-itemDashboard{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+}
+
+#pesan-dashboard h1{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dashboard h2{
+    margin-bottom: 45px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    font-weight: 700;
+}
+
+.dashboard .dash-modal{
+    background-color: #d5dfde ;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    
+
+}
+
+.dashboard .dash-modal.hide{
+    top: -1000px;
+    transition: 3s;
+}
+
+.dash-modal button{
+    width: 200px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgb(53, 52, 52);
+    color: blanchedalmond;
+    box-shadow: 0 0 6px 3px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* #dashboard .pesan-dahsboard{
+    width: 75%;
+    background-color: #cee4e3;
+    height: 350px;
+    border: solid black 2px ;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: blanchedalmond 0 0 8px 4px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+} */
+
+/* #pesan-dashboard .pesan-itemDashboard{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+} */
